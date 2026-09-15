@@ -16,6 +16,24 @@
       "message": "can just do the dts change here though, no?",
       "revId": "7a16deb53dde9321e4950b9a4611ae843ecf56a1",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8e9095c0_a6a31aa1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2026-09-15T09:37:25Z",
+      "side": 1,
+      "message": "No.\n\n1. DisplayFeature calculates physical backlight via its calibration formula:\n   bl_df \u003d brightness_clone * nativeBlMax / pwBlMax (2047 / 4095).\n   When the framework writes maximum brightness (2047), DisplayFeature reads brightness_clone and calculates:\n   (2047 * 2047 / 4095 \u003d 1023 bl_df )\n   To have DisplayFeature output the full 2047 to bl_df, brightness_clone should be scaled to 4094 \n\n2. changing `mi,mdss-dsi-panel-max-brightness-clone` to 4095 in DTS wouldn\u0027t scale the value, so brightness_clone would stay 2047 and bl_df would still be halved to 1023.\n\n3. changing `qcom,mdss-dsi-bl-max-level` to 8191, displayconfig.xml relies on the 0..4095 (with transitionPoint at 0.4998779 for 500 nits manual max).\n\n4. different SM8250 panels define different clone maximums in DTS (k11a is 8191, j1s is 6143, l11r is 4095). Doing this in driver can adapt each panel\u0027s clone scale without breaking thermal clone limits (see clone_cooling_device.c).",
+      "parentUuid": "c12e5921_8f786ba8",
+      "revId": "7a16deb53dde9321e4950b9a4611ae843ecf56a1",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
     }
   ]
 }
