@@ -16,6 +16,23 @@
       "message": "Isn\u0027t this just err log?",
       "revId": "aad83c610519a0ed13f104f9fb9310f2a987204c",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "75e656bb_d08add4e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000014
+      },
+      "writtenOn": "2026-09-22T11:36:28Z",
+      "side": 1,
+      "message": "Seems pointless?",
+      "revId": "aad83c610519a0ed13f104f9fb9310f2a987204c",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
     }
   ]
 }
