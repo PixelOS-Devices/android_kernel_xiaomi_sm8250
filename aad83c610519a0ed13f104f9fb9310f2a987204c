@@ -68,6 +68,24 @@
       "message": "This `bq_err(\"xxxxx\");` call appears in the wrong place. Specifically, the `bq` pointer (from `struct bq2597x *bq`) has not yet been initialized when the macro expands; consequently, accessing `bq-\u003edev_role` within the if condition constitutes undefined behavior. On kernels with enhanced security features or when using compilers from newer kernel versions, this triggers a kernel panic.",
       "revId": "aad83c610519a0ed13f104f9fb9310f2a987204c",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3b42bd30_00eb7d7d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000014
+      },
+      "writtenOn": "2026-09-23T15:07:13Z",
+      "side": 1,
+      "message": "noted",
+      "parentUuid": "fcda9150_6ae74a3a",
+      "revId": "aad83c610519a0ed13f104f9fb9310f2a987204c",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
     }
   ]
 }
