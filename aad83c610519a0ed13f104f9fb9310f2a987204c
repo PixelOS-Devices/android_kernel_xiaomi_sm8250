@@ -86,6 +86,23 @@
       "parentUuid": "fcda9150_6ae74a3a",
       "revId": "aad83c610519a0ed13f104f9fb9310f2a987204c",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "565e8c87_03170532",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000151
+      },
+      "writtenOn": "2026-09-24T15:16:33Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/q/topic:%22xm_power_supply%22\n\ncheck pls",
+      "revId": "aad83c610519a0ed13f104f9fb9310f2a987204c",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
     }
   ]
 }
