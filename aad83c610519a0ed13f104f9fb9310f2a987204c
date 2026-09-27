@@ -121,6 +121,24 @@
       "parentUuid": "565e8c87_03170532",
       "revId": "aad83c610519a0ed13f104f9fb9310f2a987204c",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7b839f58_3e6ab9f0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2026-09-27T21:51:30Z",
+      "side": 1,
+      "message": "The commit description has to be changed regardless.",
+      "parentUuid": "736e1fcb_32381beb",
+      "revId": "aad83c610519a0ed13f104f9fb9310f2a987204c",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
     }
   ]
 }
